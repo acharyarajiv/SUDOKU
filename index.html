@@ -1,0 +1,213 @@
+<html><head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<style>
+		input[type=text] {width:20px;}
+		td {border:4px}
+		</style>
+		<title> SUDOKU </title>
+	</head>
+	<body>
+		<table border="3">
+			<tbody>
+			<tr tblrow="1">
+				<td rowdiv="11">
+					<table border="1" id="11">
+						<tbody>
+						<tr row="1">
+							<td div="1"><input type="text" id="cell11" value="1"></td>
+							<td div="2"><input type="text" id="cell12" value="2"></td>
+							<td div="3"><input type="text" id="cell13" value="3"></td>
+						</tr>
+						<tr row="2">
+							<td div="1"><input type="text" id="cell21" value="1"></td>
+							<td div="2"><input type="text" id="cell22" value="2"></td>
+							<td div="3"><input type="text" id="cell23" value="3"></td>
+						</tr>
+						<tr row="3">
+							<td div="1"><input type="text" id="cell31" value="1"></td>
+							<td div="2"><input type="text" id="cell32" value="2"></td>
+							<td div="3"><input type="text" id="cell33" value="3"></td>
+						</tr>
+					</tbody>
+					</table>
+				</td>
+				<td rowdiv="12">
+					<table border="1" id="21">
+						<tbody>
+						<tr row="1">
+							<td div="4"><input type="text" id="cell14" value="4"></td>
+							<td div="5"><input type="text" id="cell15" value="5"></td>
+							<td div="6"><input type="text" id="cell16" value="6"></td>
+						</tr>
+						<tr row="2">
+							<td div="4"><input type="text" id="cell24" value="4"></td>
+							<td div="5"><input type="text" id="cell25" value="5"></td>
+							<td div="6"><input type="text" id="cell26" value="6"></td>
+						</tr>
+						<tr row="3">
+							<td div="4"><input type="text" id="cell34" value="4"></td>
+							<td div="5"><input type="text" id="cell35" value="5"></td>
+							<td div="6"><input type="text" id="cell36" value="6"></td>
+						</tr>
+					</tbody></table>
+				</td>
+				<td rowdiv="13">
+					<table border="1" id="31">
+						<tbody>
+						<tr row="1">
+							<td div="7"><input type="text" id="cell17" value="7"></td>
+							<td div="8"><input type="text" id="cell18" value="8"></td>
+							<td div="9"><input type="text" id="cell19" value="9"></td>
+						</tr>
+						<tr row="2">
+							<td div="7"><input type="text" id="cell27" value="7"></td>
+							<td div="8"><input type="text" id="cell28" value="8"></td>
+							<td div="9"><input type="text" id="cell29" value="9"></td>
+						</tr>
+						<tr row="3">
+							<td div="7"><input type="text" id="cell37" value="7"></td>
+							<td div="8"><input type="text" id="cell38" value="8"></td>
+							<td div="9"><input type="text" id="cell39" value="9"></td>
+						</tr>
+					</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr tblrow="2">
+				<td rowdiv="21">
+					<table border="1" id="12">
+						<tbody>
+						<tr row="4">
+							<td div="1"><input type="text" value="1" id="cell41"></td>
+							<td div="2"><input type="text" value="2" id="cell42"></td>
+							<td div="3"><input type="text" value="3" id="cell43"></td>
+						</tr>
+						<tr row="5">
+							<td div="1"><input type="text" value="1" id="cell51"></td>
+							<td div="2"><input type="text" value="2" id="cell52"></td>
+							<td div="3"><input type="text" value="3" id="cell53"></td>
+						</tr>
+						<tr row="6">
+							<td div="1"><input type="text" value="1" id="cell61"></td>
+							<td div="2"><input type="text" value="2" id="cell62"></td>
+							<td div="3"><input type="text" value="3" id="cell63"></td>
+						</tr>
+					</tbody></table>
+				</td>
+				<td rowdiv="22">
+					<table border="1" id="22">
+						<tbody>
+						<tr row="4">
+							<td div="4"><input type="text" value="4" id="cell44"></td>
+							<td div="5"><input type="text" value="5" id="cell45"></td>
+							<td div="6"><input type="text" value="6" id="cell46"></td>
+						</tr>
+						<tr row="5">
+							<td div="4"><input type="text" value="1" id="cell54"></td>
+							<td div="5"><input type="text" value="2" id="cell55"></td>
+							<td div="6"><input type="text" value="3" id="cell56"></td>
+						</tr>
+						<tr row="6">
+							<td div="4"><input type="text" value="1" id="cell64"></td>
+							<td div="5"><input type="text" value="2" id="cell65"></td>
+							<td div="6"><input type="text" value="3" id="cell66"></td>
+						</tr>
+					</tbody></table>
+				</td>
+				<td rowdiv="23">
+					<table border="1" id="32">
+						<tbody>
+						<tr row="4">
+							<td div="7"><input type="text" value="1" id="cell47"></td>
+							<td div="8"><input type="text" value="2" id="cell48"></td>
+							<td div="9"><input type="text" value="3" id="cell49"></td>
+						</tr>
+						<tr row="5">
+							<td div="7"><input type="text" value="1" id="cell57"></td>
+							<td div="8"><input type="text" value="2" id="cell58"></td>
+							<td div="9"><input type="text" value="3" id="cell59"></td>
+						</tr>
+						<tr row="6">
+							<td div="7"><input type="text" value="1" id="cell67"></td>
+							<td div="8"><input type="text" value="2" id="cell68"></td>
+							<td div="9"><input type="text" value="3" id="cell69"></td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+			<tr tblrow="3">
+				<td rowdiv="31">
+					<table border="1" id="13">
+						<tbody>
+						<tr row="7">
+							<td div="1"><input type="text" id="cell71" value="1"></td>
+							<td div="2"><input type="text" id="cell72" value="2"></td>
+							<td div="3"><input type="text" id="cell73" value="3"></td>
+						</tr>
+						<tr row="8">
+							<td div="1"><input type="text" id="cell81" value="1"></td>
+							<td div="2"><input type="text" id="cell82" value="2"></td>
+							<td div="3"><input type="text" id="cell83" value="3"></td>
+						</tr>
+						<tr row="9">
+							<td div="1"><input type="text" id="cell91" value="1"></td>
+							<td div="2"><input type="text" id="cell92" value="2"></td>
+							<td div="3"><input type="text" id="cell93" value="3"></td>
+						</tr>
+					</tbody></table>
+				</td>
+				<td rowdiv="32">
+					<table border="1" id="23">
+						<tbody>
+						<tr row="7">
+							<td div="4"><input type="text" id="cell74" value="1"></td>
+							<td div="5"><input type="text" id="cell75" value="2"></td>
+							<td div="6"><input type="text" id="cell76" value="3"></td>
+						</tr>
+						<tr row="8">
+							<td div="4"><input type="text" id="cell84" value="1"></td>
+							<td div="5"><input type="text" id="cell85" value="2"></td>
+							<td div="6"><input type="text" id="cell86" value="3"></td>
+						</tr>
+						<tr row="9">
+							<td div="4"><input type="text" id="cell94" value="1"></td>
+							<td div="5"><input type="text" id="cell95" value="2"></td>
+							<td div="6"><input type="text" id="cell96" value="3"></td>
+						</tr>
+					</tbody></table>
+				</td>
+				<td rowdiv="33">
+					<table border="1" id="33">
+						<tbody>
+						<tr row="7">
+							<td div="7"><input type="text" id="cell77" value="1"></td>
+							<td div="8"><input type="text" id="cell78" value="2"></td>
+							<td div="9"><input type="text" id="cell79" value="3"></td>
+						</tr>
+						<tr row="8">
+							<td div="7"><input type="text" id="cell87" value="1"></td>
+							<td div="8"><input type="text" id="cell88" value="2"></td>
+							<td div="9"><input type="text" id="cell89" value="3"></td>
+						</tr>
+						<tr row="9">
+							<td div="7"><input type="text" id="cell97" value="1"></td>
+							<td div="8"><input type="text" id="cell98" value="2"></td>
+							<td div="9"><input type="text" id="cell99" value="3"></td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var row = 0, col = 0;
+				$('input').each(function(){
+					col = $(this).parent().attr('div');
+					row = $(this).parent().parent().attr('row');
+					$(this).val(row+''+col);
+					$(this).attr('id','cell'+row+''+col);
+				});
+			});
+		</script>
+	
+</body></html>
