@@ -1,0 +1,1 @@
+Just a try to solve and learn sudoku
